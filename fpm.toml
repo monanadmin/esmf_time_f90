@@ -1,0 +1,25 @@
+name = "esmf_time"
+version = "0.1.0"
+license = "CC-GPL"
+author = "MONANs Team"
+maintainer = "monanadmin@inpe.br"
+copyright = "Copyright By NCAR Team"
+
+[install]
+library = false
+
+#[fortran]
+#implicit-external=true
+#implicit-typing=true
+
+
+[dependencies]
+#mpi = "*"
+#openmp = "*"
+
+[build]
+#external-modules = ["mpi","openmpi"]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+
