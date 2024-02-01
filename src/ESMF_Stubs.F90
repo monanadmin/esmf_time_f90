@@ -119,10 +119,15 @@ CONTAINS
 ! NOOP
    SUBROUTINE ESMF_Finalize( endflag, rc )
       USE ESMF_BaseMod
+#ifndef HIDE_MPI
+   use MPI
+#endif
+
       type(ESMF_END_FLAG), intent(in), optional  :: endflag
       INTEGER, INTENT(  OUT), OPTIONAL :: rc
 #ifndef HIDE_MPI
-#include <mpif.h>
+!!!!#include <mpif.h>
+!   use MPI
 #endif
       INTEGER :: ier
 

@@ -55,6 +55,14 @@
 !     ! F90 class type to match C++ Alarm class in size only;
 !     !  all dereferencing within class is performed by C++ implementation
 
+interface
+subroutine wrf_error_fatal(msg)
+  implicit none
+  character(len=*), intent(in) :: msg
+end subroutine wrf_error_fatal
+
+end interface
+
 ! internals for ESMF_Alarm
       type ESMF_AlarmInt
         character(len=256) :: name = " "

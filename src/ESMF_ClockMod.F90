@@ -53,7 +53,13 @@
 !
 !     ! F90 class type to match C++ Clock class in size only;
 !     !  all dereferencing within class is performed by C++ implementation
+interface
+subroutine wrf_error_fatal(msg)
+  implicit none
+  character(len=*), intent(in) :: msg
+end subroutine wrf_error_fatal
 
+end interface
 
 ! internals for ESMF_Clock
       type ESMF_ClockInt

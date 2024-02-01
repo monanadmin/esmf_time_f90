@@ -60,6 +60,14 @@ module ESMF_TimeIntervalMod
 !     ! F90 class type to match C++ TimeInterval class in size only;
 !     !  all dereferencing within class is performed by C++ implementation
 
+interface
+subroutine wrf_error_fatal(msg)
+  implicit none
+  character(len=*), intent(in) :: msg
+end subroutine wrf_error_fatal
+
+end interface
+
       type ESMF_TimeInterval
         ! time interval is expressed as basetime
         type(ESMF_BaseTime) :: basetime  ! inherit base class

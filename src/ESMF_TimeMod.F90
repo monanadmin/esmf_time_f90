@@ -116,6 +116,20 @@
       public operator(.GE.)
       public ESMF_TimeGE
 
+interface
+SUBROUTINE wrf_message( str )
+  IMPLICIT NONE
+  CHARACTER*(*) str
+END SUBROUTINE wrf_message
+end interface
+
+interface
+subroutine wrf_error_fatal(msg)
+  implicit none
+  character(len=*), intent(in) :: msg
+end subroutine wrf_error_fatal
+
+end interface
 !EOPI
 
 !------------------------------------------------------------------------------

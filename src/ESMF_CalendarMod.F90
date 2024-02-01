@@ -62,7 +62,13 @@
       TYPE(ESMF_BaseTime), TARGET :: monthedys(0:MONTHS_PER_YEAR)
       TYPE(ESMF_BaseTime), TARGET :: monthedysleap(0:MONTHS_PER_YEAR)
 
+interface
+subroutine wrf_error_fatal(msg)
+  implicit none
+  character(len=*), intent(in) :: msg
+end subroutine wrf_error_fatal
 
+end interface
 !------------------------------------------------------------------------------
 !     ! ESMF_CalKind_Flag
 !
