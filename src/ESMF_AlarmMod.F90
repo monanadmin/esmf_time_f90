@@ -20,7 +20,7 @@
 !
 !------------------------------------------------------------------------------
 ! INCLUDES
-#include "ESMF_TimeMgr.inc"
+!!!#include "ESMF_TimeMgr.inc"
 
 !===============================================================================
 !BOPI
@@ -63,6 +63,8 @@ end subroutine wrf_error_fatal
 
 end interface
 
+
+#include "ESMF_TimeMgr_f90.inc"
 ! internals for ESMF_Alarm
       type ESMF_AlarmInt
         character(len=256) :: name = " "

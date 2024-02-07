@@ -19,7 +19,7 @@
 !
 !------------------------------------------------------------------------------
 ! INCLUDES
-#include "ESMF_TimeMgr.inc"
+!!!#include "ESMF_TimeMgr.inc"
 
 !==============================================================================
 !BOPI
@@ -131,7 +131,7 @@ end subroutine wrf_error_fatal
 
 end interface
 !EOPI
-
+#include "ESMF_TimeMgr_f90.inc"
 !------------------------------------------------------------------------------
 ! The following line turns the CVS identifier string into a printable variable.
       character(*), parameter, private :: version = &

@@ -19,7 +19,7 @@
 !
 !------------------------------------------------------------------------------
 ! INCLUDES
-#include "ESMF_TimeMgr.inc" 
+!!#include "ESMF_TimeMgr.inc" 
 
 !==============================================================================
 !BOPI
@@ -61,6 +61,7 @@ end subroutine wrf_error_fatal
 
 end interface
 
+#include "ESMF_TimeMgr_f90.inc"
 ! internals for ESMF_Clock
       type ESMF_ClockInt
         type(ESMF_TimeInterval) :: TimeStep

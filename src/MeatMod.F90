@@ -1,7 +1,7 @@
 
 module MeatMod
 
-#include "ESMF_TimeMgr.inc"
+!!#include "ESMF_TimeMgr.inc"
 
   use ESMF_BaseMod
 
@@ -11,6 +11,8 @@ module MeatMod
 
   public fraction_to_stringi8
   public fraction_to_string
+
+#include "ESMF_TimeMgr_f90.inc"
 
 !==============================================================================
 contains

@@ -21,7 +21,7 @@
 !------------------------------------------------------------------------------
 ! INCLUDES
 
-#include "ESMF_TimeMgr.inc"
+
 !
 !===============================================================================
 !BOPI
@@ -48,6 +48,7 @@
 !
 !     ! Base class type to match C++ BaseTime class in size only;
 !     !  all dereferencing within class is performed by C++ implementation
+#include "ESMF_TimeMgr_f90.inc"
 
       type ESMF_BaseTime
         integer(ESMF_KIND_I8) :: S   ! whole seconds

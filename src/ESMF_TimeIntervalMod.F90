@@ -22,7 +22,7 @@ module ESMF_TimeIntervalMod
 !
 !------------------------------------------------------------------------------
 ! INCLUDES
-#include "ESMF_TimeMgr.inc"
+!!!#include "ESMF_TimeMgr.inc"
 !
 !===============================================================================
 !BOPI
@@ -67,6 +67,8 @@ subroutine wrf_error_fatal(msg)
 end subroutine wrf_error_fatal
 
 end interface
+
+#include "ESMF_TimeMgr_f90.inc"
 
       type ESMF_TimeInterval
         ! time interval is expressed as basetime

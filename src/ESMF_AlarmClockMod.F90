@@ -19,7 +19,7 @@
 !
 !------------------------------------------------------------------------------
 ! INCLUDES
-#include "ESMF_TimeMgr.inc"
+!!!#include "ESMF_TimeMgr.inc"
 
 !===============================================================================
 !BOPI
@@ -44,6 +44,7 @@
       ! associated derived types
       use ESMF_TimeIntervalMod, only : ESMF_TimeInterval
       use ESMF_TimeMod,         only : ESMF_Time
+      use ESMF_BaseMod
 
       implicit none
 
@@ -55,6 +56,7 @@
 ! !PUBLIC MEMBER FUNCTIONS:
       public ESMF_AlarmCreate
 
+#include "ESMF_TimeMgr_f90.inc"
 !------------------------------------------------------------------------------
 ! The following line turns the CVS identifier string into a printable variable.
       character(*), parameter, private :: version = &

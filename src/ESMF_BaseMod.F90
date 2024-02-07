@@ -314,6 +314,7 @@ interface assignment (=)
  module procedure ESMF_ptas
 end interface
 
+#include "ESMF_TimeMgr_f90.inc"
 !------------------------------------------------------------------------------
 
       contains
